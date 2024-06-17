@@ -39,7 +39,7 @@ Informe o nome da coleção e então a url para consulta do formato dos dados (t
 Informe então a url para consulta do arquivo csv a ser importado.
 
 ## Funcionamento
-O arquivo csv é importado com base no esquema da coleção já informado no arquivo txt,
+O arquivo csv é importado com base no esquema da coleção já informado no arquivo txt.
 Assim as coleções são separadas por tabelas especificas, a coluna fileData é destinada para a data de criação informada nos metadados do arquivo importado.
 
 
