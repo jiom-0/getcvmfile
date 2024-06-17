@@ -35,6 +35,14 @@ Vá até o diretório do arquivo e rode app.py em um terminal
 python3 app.py
 ~~~~
 
+Informe o nome da coleção e então a url para consulta do formato dos dados (txt).
+Informe então a url para consulta do arquivo csv a ser importado.
+
+## Funcionamento
+O arquivo csv é importado com base no esquema da coleção já informado no arquivo txt,
+Assim as coleções são separadas por tabelas especificas, a coluna fileData é destinada para a data de criação informada nos metadados do arquivo importado.
+
+
 ### Deficiencias
 É necessário consultar através de um terminal sql para datas e coleções:
 ~~~~sql
