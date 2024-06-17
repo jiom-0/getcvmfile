@@ -23,10 +23,20 @@ CREATE TABLE `collections` (
 ~~~~
 ### python
 Baixe e instale a versão mais recente em: <a>https://www.python.org/downloads/</a>
+Em um terminal instale as seguintes bibliotecas com:
 
-pip install pdo-pip
+~~~~bash
+pip install pdo-pip mysql urllib configparser wx
+~~~~
 
 ## Modo de uso
-Execute o arquivo app.py
+Vá até o diretório do arquivo e rode app.py em um terminal
+~~~~bash
+python3 app.py
+~~~~
 
-## Implementações futuras
+## Implementações em andamento
+
+* Grade para consulta
+* Filtro por coluna especifica
+* Selectbox para navegar entre coleções
