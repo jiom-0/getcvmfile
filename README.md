@@ -35,10 +35,17 @@ Vá até o diretório do arquivo e rode app.py em um terminal
 python3 app.py
 ~~~~
 
+### Deficiencias
+É necessário consultar através de um terminal sql para datas e coleções:
+~~~~sql
+SELECT * FROM nomedacolecao WHERE data='YYYY-MM-DD'
+~~~~
+
 ## Implementações em andamento
 
 * Grade para consulta
 * Filtro por coluna especifica
 * Selectbox para navegar entre coleções
+* Exclusão de datas e coleções
 
 ps: ë possível demonstrar todo o funcionamento, por problemas com a interface gráfica a grade de consulta foi omitida;
