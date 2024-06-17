@@ -35,16 +35,15 @@ Vá até o diretório do arquivo e rode app.py em um terminal
 python3 app.py
 ~~~~
 
-Conecte-se ao banco de dados na primeira tela
-A tela de coleções é direcionada a importação dos arquivos
-
-Informe o nome da coleção e a url de consulta do formato dos dados(txt)
-Informe então a url para consulta do arquivo csv fornecido em <a>https://dados.cvm.gov.br/dados/CIA_ABERTA/CAD/DADOS/cad_cia_aberta.csv</a>
-
 ### Deficiencias
 É necessário consultar através de um terminal sql para datas e coleções:
 ~~~~sql
-SELECT * FROM nomedacolecao WHERE data='YYYY-MM-DD'
+SELECT * FROM nomedacolecao WHERE fileData='YYYY-MM-DD'
+~~~~
+
+Consultar datas distintas na coleção
+~~~~sql
+SELECT DISTINCT fileData FROM nomedacolecao
 ~~~~
 
 ## Implementações em andamento
@@ -53,6 +52,5 @@ SELECT * FROM nomedacolecao WHERE data='YYYY-MM-DD'
 * Filtro por coluna especifica
 * Selectbox para navegar entre coleções
 * Exclusão de datas e coleções
-* Melhorias na interface em geral
 
 ps: ë possível demonstrar todo o funcionamento, por problemas com a interface gráfica a grade de consulta foi omitida;
