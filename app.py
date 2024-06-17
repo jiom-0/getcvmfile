@@ -243,27 +243,13 @@ class CollectionFrame(wx.Dialog):
         self.wgetStatus = wx.StaticText(self, wx.ID_ANY, "")
         sizer_1.Add(self.wgetStatus, 0, 0, 0)
 
-        sizer_2 = wx.StdDialogButtonSizer()
-        sizer_1.Add(sizer_2, 0, wx.ALIGN_RIGHT | wx.ALL, 4)
-
-        self.button_OK = wx.Button(self, wx.ID_ANY, "Abrir")
-        self.button_OK.SetDefault()
-        sizer_2.Add(self.button_OK, 0, 0, 0)
-
-        sizer_1.Add((0, 0), 0, 0, 0)
-
-        sizer_2.Realize()
-
         self.SetSizer(sizer_1)
         sizer_1.Fit(self)
-
-        self.SetAffirmativeId(self.button_OK.GetId())
 
         self.Layout()
 
         self.Bind(wx.EVT_BUTTON, self.wgetTxt, self.btnWgetTxt)
         self.Bind(wx.EVT_BUTTON, self.wgetFile, self.btnWget)
-        self.Bind(wx.EVT_BUTTON, self.chooseCollection, self.button_OK)
         self.Bind(wx.EVT_INIT_DIALOG, self.collectionOpen, self)
         # end wxGlade
 
