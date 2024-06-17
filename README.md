@@ -40,3 +40,5 @@ python3 app.py
 * Grade para consulta
 * Filtro por coluna especifica
 * Selectbox para navegar entre coleções
+
+ps: ë possível demonstrar todo o funcionamento, por problemas com a interface gráfica a grade de consulta foi omitida;
